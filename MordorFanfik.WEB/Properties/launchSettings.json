@@ -13,7 +13,10 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation",
+        "VaultArtierm": "https://mordorfanfikwebvault.vault.azure.net/",
+        "AZURE_USERNAME": "artyom.rus.ct100@mail.ru",
+        "VaultUri": "https://mordorfanfikwebvault.vault.azure.net/"
       }
     },
     "MordorFanfik.WEB": {
@@ -21,7 +24,10 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation",
+        "VaultArtierm": "https://mordorfanfikwebvault.vault.azure.net/",
+        "AZURE_USERNAME": "artyom.rus.ct100@mail.ru",
+        "VaultUri": "https://mordorfanfikwebvault.vault.azure.net/"
       },
       "dotnetRunMessages": "true",
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
