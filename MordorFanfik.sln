@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordorFanfik.WEB", "MordorFanfik.WEB\MordorFanfik.WEB.csproj", "{06A3EED6-0899-4B9D-8F84-E7F95C6028BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06A3EED6-0899-4B9D-8F84-E7F95C6028BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A3EED6-0899-4B9D-8F84-E7F95C6028BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A3EED6-0899-4B9D-8F84-E7F95C6028BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A3EED6-0899-4B9D-8F84-E7F95C6028BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DCD882A-6F05-4C4D-BD7E-0166CEE1357C}
+	EndGlobalSection
+EndGlobal
