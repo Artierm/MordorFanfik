@@ -27,21 +27,24 @@ namespace MordorFanfik.WEB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<IdentityUser>(options => {
-                options.SignIn.RequireConfirmedAccount = true;
-                options.SignIn.RequireConfirmedAccount = true;
-                options.Password.RequiredLength = 6;   // минимальная длина
-                options.Password.RequireNonAlphanumeric = false;   // требуются ли не алфавитно-цифровые символы
-                options.Password.RequireLowercase = false; // требуются ли символы в нижнем регистре
-                options.Password.RequireUppercase = false; // требуются ли символы в верхнем регистре
-                options.Password.RequireDigit = true; // требуются ли цифры
-            })
+            services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.SignIn.RequireConfirmedAccount = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;  
+                options.Password.RequireLowercase = false; 
+                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = true; 
+            });
 
             services.AddControllersWithViews();
             services.AddAuthentication().AddFacebook(facebookOptions =>
@@ -78,6 +81,8 @@ namespace MordorFanfik.WEB
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+          
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

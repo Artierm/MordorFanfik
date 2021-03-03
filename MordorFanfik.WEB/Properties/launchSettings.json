@@ -12,8 +12,8 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        //"VaultUri": "https://mordorfanfikwebvault.vault.azure.net/",
-        //"AZURE_USERNAME": "artyom.rus.ct100@mail.ru",
+        "VaultUri": "https://mordorfanfikwebvault.vault.azure.net/",
+        "AZURE_USERNAME": "artyom.rus.ct100@mail.ru",
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
       }

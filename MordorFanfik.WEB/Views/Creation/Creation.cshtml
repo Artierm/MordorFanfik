@@ -1,0 +1,33 @@
+﻿@model MordorFanfik.WEB.ViewModels.CreateCreationViewModel;
+
+
+<h2>Создание нового произведения</h2>
+<form method="post" asp-controller="Creation" asp-action="Creation">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="NameCreation"></label><br />
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+    </div>
+        <div>
+            <label asp-for="Description"></label><br />
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Genre"></label><br />
+        </div>
+    <select class="form-select" aria-label="Disabled select example" active>
+        <option disabled selected>Open this select menu</option>
+        @foreach (var item in ViewBag.Genre)
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <div>
+            <input type="submit" value="Cоздать произведение" />
+        </div>
+</form>

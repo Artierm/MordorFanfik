@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using MordorFanfik.WEB.Models;
 using MordorFanfik.WEB.ViewModels;
 
-namespace CustomIdentityApp.Controllers
+namespace MordorFanfik.WEB.Controllers
 {
     public class UsersController : Controller
     {
