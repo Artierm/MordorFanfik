@@ -15,6 +15,6 @@ namespace MordorFanfik.WEB.Models
 
         public void DeleteByName(string name);
 
-        public IEnumerable<Chapter> GetAllCreations(Creation creation);
+        public IEnumerable<Chapter> GetAllChapters(Creation creation);
     }
 }
